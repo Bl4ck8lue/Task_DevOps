@@ -1,0 +1,11 @@
+[Unit]
+Requires=monitoring.service
+
+[Timer]
+OnBootSec=1min
+OnCalendar=*:0/1
+AccuracySec=1s
+Persistent=true
+
+[Install]
+WantedBy=timers.target
